@@ -72,8 +72,11 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
+    'django_filters',
     
     'crafts_profile',
+    'crafts_posts',
+    'crafts_likes',
 ]
 SITE_ID = 1 
 
