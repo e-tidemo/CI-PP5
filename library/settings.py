@@ -80,6 +80,7 @@ INSTALLED_APPS = [
     'crafts_posts',
     'crafts_likes',
     'crafts_comments',
+    'crafts_contact',
 ]
 SITE_ID = 1 
 
@@ -114,7 +115,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'library.wsgi.application'
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
+EMAIL_HOST = 'smtp.yourserver.com'
+EMAIL_PORT = '<your-server-port>'
+EMAIL_HOST_USER = 'your@djangoapp.com'
+EMAIL_HOST_PASSWORD = 'your-email account-password'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
